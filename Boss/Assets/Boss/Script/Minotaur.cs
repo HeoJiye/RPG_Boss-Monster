@@ -16,13 +16,17 @@ public class Minotaur : MonoBehaviour
 
     bool attack;
 
-    float hp;
+    public static float hp;
+
+	string[] attackList;
 
     // Start is called before the first frame update
     void Start()
     {
+		attackList = new string[] {"Attack0", "Attack1", "Attack2", "Stun"};
         hp = 100;
         anim = gameObject.GetComponent<Animator>();
+		Invoke("Attack", 5);
     }
 
     // Update is called once per frame
@@ -74,4 +78,10 @@ public class Minotaur : MonoBehaviour
         anim.SetTrigger("isAttacked");
         if(hp > 0) hp -= damage;
     }
+
+	public void	Attack() {
+		int num = Random.Range(0, 3);
+		anim.SetTrigger(attackList[num]);
+		Invoke("Attack", 7);
+	}
 }
