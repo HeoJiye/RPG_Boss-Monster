@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3251289377873126782}
   - component: {fileID: 3251289377873126778}
   - component: {fileID: 3251289377873126781}
+  - component: {fileID: 7759378452256801947}
   - component: {fileID: 3251289377873126783}
   - component: {fileID: 3251289377873126776}
   - component: {fileID: 3251289377873126777}
@@ -135,6 +136,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpPower: 20
   movePower: 10
+--- !u!114 &7759378452256801947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251289377873126770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036cc07a2eba49a459014a0844b97b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!70 &3251289377873126783
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

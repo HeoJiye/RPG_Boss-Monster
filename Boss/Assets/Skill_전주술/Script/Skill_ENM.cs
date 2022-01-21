@@ -15,7 +15,7 @@ public class Skill_ENM : MonoBehaviour
     Animator EA;
 
     EnemyMove en;
-    Minotaur mino;
+    Mino_Hp mino;
 
     void Awake() {
         animator = GetComponent<Animator>();
@@ -29,7 +29,7 @@ public class Skill_ENM : MonoBehaviour
         if(enemy.tag == "Enemy")
             en = enemy.GetComponent<EnemyMove>();
         else if(enemy.tag == "Boss") {
-            mino = enemy.GetComponent<Minotaur>();
+            mino = enemy.GetComponent<Mino_Hp>();
             trans.position -= new Vector3(0f, 2f, 5f);
         }
     }
@@ -39,9 +39,6 @@ public class Skill_ENM : MonoBehaviour
         
         if(enemy.tag == "Enemy")
             EA.SetTrigger("피격");
-        else if(enemy.tag == "Boss") {
-            mino.Attacked(damage);
-        }
      }
 
      void Update() {
@@ -61,7 +58,9 @@ public class Skill_ENM : MonoBehaviour
             en.isAttacked = false;
             en.HP -= damage;
         }
-        
+        else if(enemy.tag == "Boss") {
+            mino.Attacked(damage);
+        }        
 
         Destroy(skill);
     }

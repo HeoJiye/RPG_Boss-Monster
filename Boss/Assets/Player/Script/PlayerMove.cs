@@ -15,8 +15,6 @@ public class PlayerMove : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    // 플레이어 이동 관련(전주술/산양과 관련 X)
-
     public float jumpPower;
     public float movePower;
 
@@ -55,7 +53,7 @@ public class PlayerMove : MonoBehaviour
 
     void Jump()
     {
-        if(Input.GetKeyDown(KeyCode.Z)) {
+        if(Input.GetKeyDown(KeyCode.C)) {
 
         rigid.velocity = Vector2.zero;
 
@@ -63,6 +61,31 @@ public class PlayerMove : MonoBehaviour
         rigid.AddForce(jumpVelocity, ForceMode2D.Impulse);
 
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy") {
+            OnDamaged(collision.transform.position);
+        }
+    }
+
+    void OnDamaged(Vector2 targetPos)
+    {
+        gameObject.layer = 13;
+        spriteRenderer.color = new Color(1,1,1,0.8f);
+
+        int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
+        rigid.AddForce(new Vector2(dirc, 1)*3, ForceMode2D.Impulse);
+
+        anim.SetTrigger("isAttacked");
+        Invoke("OffDamaged", 0.5f);
+    }
+
+    void OffDamaged()
+    {
+        gameObject.layer = 12;
+        spriteRenderer.color = new Color(1,1,1,1);
     }
 }
 
