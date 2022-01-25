@@ -63,10 +63,10 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy") {
-            OnDamaged(collision.transform.position);
+        if(collision.gameObject.tag == "BossAttack") {
+            print(collision.gameObject.name + " 맞음!");
         }
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mino_attack : MonoBehaviour
 {
-    public GameObject[] attacks;
+    //public GameObject[] attacks;
 
     string[] attackList;
 

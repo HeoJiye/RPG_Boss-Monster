@@ -9,6 +9,7 @@ TagManager:
   - Platform
   - Boss
   - FieldItem
+  - BossAttack
   layers:
   - Default
   - TransparentFX

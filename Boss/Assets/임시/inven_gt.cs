@@ -20,9 +20,8 @@ public class inven_gt : MonoBehaviour
     {
         if (collision.CompareTag("FieldItem") && Input.GetKeyDown(KeyCode.Z))
         {
-            FieldItems fieldItems = collision.GetComponent<FieldItems>();
-            //if (AddItem(fieldItems.GetItem()))
-                fieldItems.DestroyItem(); //아이템 추가 성공하면 필드 아이템 파괴
+            GameObject item = collision.gameObject;
+            Destroy(item);
         }
     }
 }
