@@ -45,5 +45,6 @@ public class Mino_Hp : MonoBehaviour
 
     public void Attacked(float damage) {
     	hp -= damage;
+        anim.SetTrigger("isAttacked");
     }
 }

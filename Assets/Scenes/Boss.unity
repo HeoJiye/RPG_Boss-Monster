@@ -357,7 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 287982897}
   - component: {fileID: 287982898}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: stun (3)
   m_TagString: BossAttack
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -812,7 +812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 716576129}
   - component: {fileID: 716576130}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: stun (2)
   m_TagString: BossAttack
   m_Icon: {fileID: 0}
@@ -843,7 +843,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1303,7 +1303,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1320,14 +1320,14 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -5.4836936, y: 0.27320242}
       - {x: -7.7961984, y: -1.2186568}
-      - {x: -7.514849, y: -4.0546136}
-      - {x: -4.345889, y: -4.140829}
-      - {x: -4.148138, y: -0.8015018}
+      - {x: -7.6989217, y: -4.091441}
+      - {x: -3.609598, y: -4.140829}
+      - {x: -3.485476, y: -0.72784644}
     - - {x: 5.461448, y: 0.2800464}
-      - {x: 7.8333116, y: -1.4653827}
-      - {x: 7.386884, y: -4.2694974}
-      - {x: 4.1972113, y: -3.9368105}
-      - {x: 4.05759, y: -0.8316956}
+      - {x: 7.9437556, y: -1.0971054}
+      - {x: 7.902287, y: -4.159014}
+      - {x: 3.7922516, y: -4.1209493}
+      - {x: 3.689444, y: -0.7580399}
 --- !u!1 &1391506127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,7 +1492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521992302}
   - component: {fileID: 1521992303}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: stun (1)
   m_TagString: BossAttack
   m_Icon: {fileID: 0}
@@ -1523,7 +1523,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1598,7 +1598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1785184487}
   - component: {fileID: 1785184488}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: stun (5)
   m_TagString: BossAttack
   m_Icon: {fileID: 0}
@@ -1629,7 +1629,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1824,7 +1824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1830718233}
   - component: {fileID: 1830718234}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: stun (4)
   m_TagString: BossAttack
   m_Icon: {fileID: 0}
@@ -1855,7 +1855,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1983,8 +1983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1847151656}
-  - component: {fileID: 1847151657}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Stun
   m_TagString: BossAttack
   m_Icon: {fileID: 0}
@@ -2011,36 +2010,6 @@ Transform:
   m_Father: {fileID: 1391506129}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &1847151657
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847151655}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
 --- !u!1 &2011072714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,7 +2431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2122552149}
   - component: {fileID: 2122552150}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: stun (6)
   m_TagString: BossAttack
   m_Icon: {fileID: 0}
@@ -2493,7 +2462,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3099,7 +3068,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3185,7 +3154,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

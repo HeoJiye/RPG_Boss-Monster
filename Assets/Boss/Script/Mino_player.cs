@@ -29,9 +29,28 @@ public class Mino_player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "BossAttack") {
-            OnDamaged(other.transform.position);
-            print(other.gameObject.name + " 맞음!");
+            if(other.gameObject.layer == 12) {
+                OnStun();
+                print("스턴");
+            }
+            else {
+                OnDamaged(other.transform.position);
+                print(other.gameObject.name + " 맞음!");
+            }
         }
+    }
+
+    void OnStun() {
+        spriteRenderer.color = new Color(0.8f,0.8f,0.8f,0.8f);
+
+        gameObject.GetComponent<PlayerMove>().enabled = false;
+        anim.SetBool("isWalking", false);
+
+        Invoke("OffStun", 2f);
+    }
+    void OffStun() {
+        spriteRenderer.color = new Color(1,1,1,1);
+        gameObject.GetComponent<PlayerMove>().enabled = true;
     }
 
     void OnDamaged(Vector2 targetPos)
